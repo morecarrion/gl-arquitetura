@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+     
+.header-container {
+    font-family: 'Copperplate', Fantasy;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15px 30px;
+    background-color: #bdb29c;
+}
+
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        }
+
+    nav a{
+        font-family:'Copperplate', Fantasy; 
+        font-size: 18px;
+        color: #706755;
+        text-decoration: none;
+        }
+            
+
+    h1{
+        font-family:'Copperplate', Fantasy; 
+        font-size: 25px;
+        color:#000000;
+        margin:10px 0;
+        text-align: left;
+        }
+
+    .logo {
+        height: 60px; 
+        width: auto; 
+        border-radius:10px;
+        }
+            
+    .logo:hover {
+        opacity: 0.6;
+        }
+
+    body{
+        margin:10px 10px ;
+        font-size: 16px;
+        background-color: rgba(211, 189, 168, 0.612);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        line-height: 1.3;
+        }
+
+.contact-content {
+display: flex;
+gap: 40px; /* Espacio entre formulario y enlaces */
+}
+
+.contact-container {
+max-width: 800px;
+margin: 20px; 
+padding: 30px;
+border-radius: 8px;
+}
+
+.contact-header {
+text-align: center;
+margin-bottom: 30px;
+}
+
+.contact-header h2 {
+text-align: center;
+color: #222;
+font-size: 28px;
+margin-bottom: 15px;
+}
+
+.contact-header p {
+text-align: center;
+color: #666;
+font-size: 16px;
+max-width: 600px;
+margin: 0 auto;
+}
+
+.contact-form {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group.full-width {
+grid-column: span 2;
+}
+
+label {
+display: block;
+margin-bottom: 8px;
+font-weight: 600;
+color: #444;
+}
+
+input, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ddd;
+border-radius: 4px;
+font-size: 16px;
+transition: border 0.3s;
+}
+
+textarea {
+min-height: 150px;
+resize: vertical;
+}
+
+.submit-btn {
+grid-column: span 2;
+background-color: #bdb29c;
+color: white;
+border: none;
+padding: 14px;
+font-size: 16px;
+font-weight: 600;
+border-radius: 4px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+background-color: #1b4069;
+}
+
+
+.contact-links {
+margin-left: 70px;
+width: 300px;
+padding: 20px;
+align-self:flex-start; /* Alinea con el inicio del formulario */
+}
+
+.contact-links h3 {
+font-size: 18px;
+margin-top: 80px;
+margin-bottom: 20px;
+margin-left: 100px;
+color: #222;
+}
+
+.contact-links ul {
+line-height: 0.7;
+font-size: 15px;
+text-align: left;
+margin-left: 60px;
+list-style: none;
+padding: 0;
+}
+
+.contact-links li {
+margin-bottom: 15px;
+}
+
+.contact-links a {
+color: #767272;
+text-decoration: none;
+transition: color 0.3s;
+}
+
+.contact-links a:hover {
+color: #1b4069;
+}
+
+.logocontacto{
+height: 80px; 
+width: auto; 
+border-radius:10px;
+}
+
+.logocontacto:hover {
+opacity: 0.8;
+}
+
+
+
+footer {
+background-color: #a89d87;
+color: white;
+padding: 30px 0;
+text-align: left;
+font-family: 'Copperplate', Fantasy;
+margin-top: auto;
+}
+
+footer h4 {
+text-align: left;
+font-family: 'Copperplate', Fantasy;
+margin-top:auto;
+font-size: 20px;
+font-weight: normal;
+color: #ffffff;
+}
+
+/* contenedor de redes */
+.social-links {
+display: flex;
+justify-content:right;
+gap: 5px;
+margin-top: 15px;
+margin-right: 10px; 
+}
+
+/* Estilos iconos */
+.social-icon {
+width: 20px;
+height: 20px;
+transition: all 0.3s ease;
+border: radius 5px;
+padding: 0px;
+}
+
+
+.whatsapp:hover {
+background-color: #25D366;
+transform: translateY(-5px);
+}
+
+.instagram:hover {
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+transform: translateY(-5px);
+}
+
+.facebook:hover {
+background-color: #1877F2;
+transform: translateY(-5px);
+}
+
+.X:hover {
+background-color: #867e7e;
+transform: translateY(-5px);
+}
+
+/* Tamaño*/
+.whatsapp{
+height:5vh;
+width: 3vw;
+border-radius:10px;
+}
+
+.instagram{
+height:5vh;
+width:3vw;
+border-radius:10px;
+}
+
+.facebook{
+height:5vh;
+width:3vw;
+border-radius:10px;
+}
+
+.X{
+height:5vh;
+width:3vw;
+border-radius:10px;
+}

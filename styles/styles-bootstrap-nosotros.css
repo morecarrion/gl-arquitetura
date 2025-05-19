@@ -1,0 +1,83 @@
+header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-consulta,
+    .p2-consulta {
+        margin-left: 1rem ;
+        margin-right: 1rem ;
+        font-size: 18px;
+    }
+
+    .consultanos {
+        width: 100% ;
+        margin-left: 0 ;
+    }
+
+    .social-links {
+        justify-content: center ;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .content-h2 p {
+        font-size: 16px;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .arquitectura-residencial p {
+        font-size: 24px;
+    }
+
+    .consultanos textarea {
+        width: 100%;
+    }
+}

@@ -1,0 +1,87 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* Contacto: estructura de formulario + links */
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr ;
+    }
+
+    .form-group.full-width,
+    .submit-btn {
+        grid-column: span 1 ;
+    }
+
+    .contact-links {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-links ul {
+        margin-left: 0;
+    }
+
+    .social-links {
+        justify-content: center ;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .contact-header h2 {
+        font-size: 22px;
+    }
+
+    .contact-header p {
+        font-size: 14px;
+        padding: 0 1rem;
+    }
+
+    input, textarea {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+    }
+}

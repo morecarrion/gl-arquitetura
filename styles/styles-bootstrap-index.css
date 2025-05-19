@@ -1,0 +1,80 @@
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+.service-h2 {
+    margin-top: 3rem;  /* mt-5 */
+    margin-bottom: 1.5rem;  /* mb-4 */
+}
+
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem; /* gap-4 */
+}
+
+footer {
+    margin-top: 3rem; /* mt-5 */
+}
+
+.social-links {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem; /* gap-2 */
+}
+
+/*  MEDIA QUERIES  */
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .casas-llave-content p {
+        margin-right: 0 !important;
+        padding: 0 1rem;
+    }
+
+    .social-links {
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 576px) {
+    h1.titulo-principal {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .fondo-casa-portada p,
+    .fondo-casa-portada section {
+        font-size: 22px;
+    }
+
+    .service {
+        width: 100% !important;
+    }
+
+    .casas-llave-content ul {
+        padding-left: 1rem;
+    }
+}
