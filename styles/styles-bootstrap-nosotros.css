@@ -1,118 +1,119 @@
-.header-container, nav, .about-section, footer, .social-links {
+/* Bootstrap custom para quienessomos.html con media queries mejoradas */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 1.5rem;
 }
 
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    nav, .header-container, .about-section {
+    nav {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 0.5rem;
     }
 
-    .p-consulta, .p2-consulta {
-        margin: 0 1rem !important;
+    .header-container {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 10px;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .content-h2 p,
+    .p,
+    .p2 {
+        font-size: 16px;
+        padding: 0 1rem;
+        line-height: 1.4;
+    }
+
+    .p-modificable {
+        font-size: 18px;
+        padding: 0 1rem;
+    }
+
+    .arquitectura-residencial {
+        width: 95%;
+        margin: 1rem auto;
+    }
+
+    .p-consulta,
+    .p2-consulta {
+        padding: 0 1rem;
+        text-align: justify;
+    }
+
+    .consultanos {
+        width: 95% !important;
+        margin: 1rem auto;
     }
 
     .social-links {
         justify-content: center !important;
     }
-
-    footer {
-        text-align: center;
-    }
 }
 
 @media (max-width: 576px) {
     h1, h2, h3 {
+        text-align: center;
         font-size: 22px;
     }
 
-    .p-modificable, .p-consulta, .p2-consulta {
+    .logo {
+        height: 50px;
+    }
+
+    nav a {
         font-size: 16px;
     }
-}
 
+    .contact-links {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
 
-
-@media (max-width: 480px) {
-  h1, h2 {
-    font-size: 18px;
-    text-align: center;
-  }
-
-  .p-modificable, .p, .p2, .p-consulta, .p2-consulta {
-    font-size: 14px;
-    line-height: 1.5;
-    padding: 0 10px;
-    text-align: justify;
-  }
-
-  .about-section {
-    flex-direction: column;
-  }
-
-  .social-links {
-    justify-content: center !important;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-
-
-@media (max-width: 480px) {
-  body, p, li, input, textarea, label {
-    font-size: 12px !important;
-    line-height: 1.4 !important;
-    padding: 4px !important;
-    margin: 4px 0 !important;
-  }
-
-  h1, h2, h3 {
-    font-size: 16px !important;
-    text-align: center !important;
-    line-height: 1.2 !important;
-    margin: 6px 0 !important;
-  }
-
-  nav, .header-container, .services-container,
-  .about-section, .about-section2,
-  .contact-content, .contact-form {
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 6px !important;
-  }
-
-  .service, .contact-container, .contact-links {
-    width: 100% !important;
-    padding: 10px !important;
-  }
-
-  .service-image, .service-video {
-    height: auto !important;
-    max-height: 180px !important;
-  }
-
-  .contact-links ul {
-    margin: 0 auto !important;
-    padding: 0 !important;
-    text-align: center !important;
-  }
-
-  .social-links {
-    justify-content: center !important;
-    gap: 6px !important;
-    margin: 0 auto !important;
-  }
-
-  footer {
-    text-align: center !important;
-    padding: 10px !important;
-  }
+    .contact-links ul {
+        margin-left: 0;
+    }
 }

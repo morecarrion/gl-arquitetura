@@ -1,7 +1,13 @@
-.header-container, nav, .services-container, footer, .social-links {
+header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 1.5rem;
 }
 
@@ -10,138 +16,87 @@
     margin-bottom: 1.5rem;
 }
 
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
 footer {
     margin-top: 3rem;
 }
 
+.social-links {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+}
+
+/* MEDIA QUERIES para index.html */
+
 @media (max-width: 768px) {
-    nav, .header-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+    nav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.5rem;
+    }
+
+    .header-container {
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 10px;
+    }
+
+    .fondo-casa-portada p,
+    .fondo-casa-portada section {
+      font-size: 20px;
+      padding: 0 1rem;
     }
 
     .services-container {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
 
     .service {
-        width: 90% !important;
+      width: 95% !important;
+      padding: 15px;
     }
 
-    .social-links {
-        justify-content: center !important;
+    .casas-llave-content p,
+    .casas-llave-content section p,
+    .casas-llave-content ul li {
+      font-size: 16px;
+      line-height: 1.5;
+      padding: 0 1rem;
     }
 
     footer {
-        text-align: center;
+      text-align: center;
+    }
+
+    .social-links {
+      justify-content: center !important;
     }
 }
 
 @media (max-width: 576px) {
     h1, h2, h3 {
-        font-size: 22px;
-        text-align: center;
+      text-align: center;
+      font-size: 24px;
     }
 
     nav a {
-        font-size: 16px;
+      font-size: 16px;
     }
-}
 
+    .logo {
+      height: 50px;
+    }
 
-
-@media (max-width: 480px) {
-  h1, h2, h3 {
-    font-size: 18px;
-    text-align: center;
-    line-height: 1.2;
-  }
-
-  p, li {
-    font-size: 14px;
-    line-height: 1.4;
-    padding: 0 10px;
-    text-align: justify;
-  }
-
-  .header-container,
-  nav {
-    gap: 5px;
-    padding: 10px;
-  }
-
-  .services-container {
-    gap: 10px;
-  }
-
-  .service {
-    padding: 15px;
-    width: 95% !important;
-  }
-
-  .social-links {
-    gap: 10px;
-    margin-right: 0;
-    justify-content: center !important;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-
-
-@media (max-width: 480px) {
-  body, p, li, input, textarea, label {
-    font-size: 12px !important;
-    line-height: 1.4 !important;
-    padding: 4px !important;
-    margin: 4px 0 !important;
-  }
-
-  h1, h2, h3 {
-    font-size: 16px !important;
-    text-align: center !important;
-    line-height: 1.2 !important;
-    margin: 6px 0 !important;
-  }
-
-  nav, .header-container, .services-container,
-  .about-section, .about-section2,
-  .contact-content, .contact-form {
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 6px !important;
-  }
-
-  .service, .contact-container, .contact-links {
-    width: 100% !important;
-    padding: 10px !important;
-  }
-
-  .service-image, .service-video {
-    height: auto !important;
-    max-height: 180px !important;
-  }
-
-  .contact-links ul {
-    margin: 0 auto !important;
-    padding: 0 !important;
-    text-align: center !important;
-  }
-
-  .social-links {
-    justify-content: center !important;
-    gap: 6px !important;
-    margin: 0 auto !important;
-  }
-
-  footer {
-    text-align: center !important;
-    padding: 10px !important;
-  }
+    .service-image {
+      height: 180px !important;
+    }
 }

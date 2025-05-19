@@ -1,154 +1,133 @@
-.header-container, nav, footer, .social-links {
+.header-container {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
-}
-
-.contact-content {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  
+  nav {
     display: flex;
     flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .contact-content {
+    display: flex;
     gap: 2rem;
     justify-content: center;
-}
-
-@media (max-width: 768px) {
-    nav, .header-container {
-        flex-direction: column;
-        align-items: center;
+    flex-wrap: nowrap;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 8px;
+  }
+  
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+  
+  .form-group.full-width {
+    grid-column: span 2;
+  }
+  
+  .contact-links {
+    margin-left: 70px;
+    width: 300px;
+    padding: 20px;
+    align-self: flex-start;
+  }
+  
+  footer {
+    margin-top: 2rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: end;
+    gap: 0.5rem;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
     }
-
+  
+    .header-container {
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 10px;
+    }
+  
+    .contact-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
     .contact-form {
-        grid-template-columns: 1fr !important;
+      grid-template-columns: 1fr;
     }
-
+  
     .form-group.full-width,
     .submit-btn {
-        grid-column: span 1 !important;
+      grid-column: span 1;
     }
-
+  
+    .contact-container,
     .contact-links {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
+      width: 95%;
+      margin: 0 auto;
+      padding: 0 1rem;
     }
-
+  
+    .contact-links h3,
     .contact-links ul {
-        margin-left: 0;
+      text-align: center;
+      margin: 0;
     }
-
-    .social-links {
-        justify-content: center !important;
-    }
-
+  
     footer {
-        text-align: center;
+      text-align: center;
     }
-}
-
-@media (max-width: 576px) {
-    h1, h2 {
-        text-align: center;
-        font-size: 22px;
+  
+    .social-links {
+      justify-content: center !important;
     }
-
-    .contact-header p,
-    input, textarea,
+  }
+  
+  @media (max-width: 576px) {
+    h1, h2, h3 {
+      text-align: center;
+      font-size: 24px;
+    }
+  
+    .contact-header p {
+      font-size: 16px;
+      padding: 0 1rem;
+    }
+  
+    input, textarea {
+      font-size: 16px;
+    }
+  
     .submit-btn {
-        font-size: 14px;
+      font-size: 16px;
+      padding: 10px;
     }
-}
-
-
-
-@media (max-width: 480px) {
-  h1, h2 {
-    font-size: 18px;
-    text-align: center;
+  
+    nav a {
+      font-size: 16px;
+    }
+  
+    .logo {
+      height: 50px;
+    }
   }
-
-  .contact-header p,
-  input,
-  textarea,
-  label {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  .submit-btn {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .contact-links {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .contact-links ul {
-    margin: 0;
-  }
-
-  .social-links {
-    justify-content: center !important;
-  }
-
-  footer {
-    text-align: center;
-  }
-}
-
-
-
-@media (max-width: 480px) {
-  body, p, li, input, textarea, label {
-    font-size: 12px !important;
-    line-height: 1.4 !important;
-    padding: 4px !important;
-    margin: 4px 0 !important;
-  }
-
-  h1, h2, h3 {
-    font-size: 16px !important;
-    text-align: center !important;
-    line-height: 1.2 !important;
-    margin: 6px 0 !important;
-  }
-
-  nav, .header-container, .services-container,
-  .about-section, .about-section2,
-  .contact-content, .contact-form {
-    flex-direction: column !important;
-    align-items: center !important;
-    text-align: center !important;
-    gap: 6px !important;
-  }
-
-  .service, .contact-container, .contact-links {
-    width: 100% !important;
-    padding: 10px !important;
-  }
-
-  .service-image, .service-video {
-    height: auto !important;
-    max-height: 180px !important;
-  }
-
-  .contact-links ul {
-    margin: 0 auto !important;
-    padding: 0 !important;
-    text-align: center !important;
-  }
-
-  .social-links {
-    justify-content: center !important;
-    gap: 6px !important;
-    margin: 0 auto !important;
-  }
-
-  footer {
-    text-align: center !important;
-    padding: 10px !important;
-  }
-}
