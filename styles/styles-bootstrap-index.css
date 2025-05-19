@@ -1,47 +1,24 @@
-.header-container {
+.header-container, nav, .services-container, footer, .social-links {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-nav {
-    display: flex;
-    flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-
 .service-h2 {
-    margin-top: 3rem;  /* mt-5 */
-    margin-bottom: 1.5rem;  /* mb-4 */
-}
-
-
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1.5rem; /* gap-4 */
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 footer {
-    margin-top: 3rem; /* mt-5 */
+    margin-top: 3rem;
 }
-
-.social-links {
-    display: flex;
-    justify-content: end;
-    gap: 0.5rem; /* gap-2 */
-}
-
-/*  MEDIA QUERIES  */
 
 @media (max-width: 768px) {
-    nav {
+    nav, .header-container {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .services-container {
@@ -49,32 +26,68 @@ footer {
         align-items: center;
     }
 
-    .casas-llave-content p {
-        margin-right: 0 !important;
-        padding: 0 1rem;
+    .service {
+        width: 90% !important;
     }
 
     .social-links {
         justify-content: center !important;
     }
+
+    footer {
+        text-align: center;
+    }
 }
 
 @media (max-width: 576px) {
-    h1.titulo-principal {
+    h1, h2, h3 {
+        font-size: 22px;
         text-align: center;
-        font-size: 22px;
     }
 
-    .fondo-casa-portada p,
-    .fondo-casa-portada section {
-        font-size: 22px;
+    nav a {
+        font-size: 16px;
     }
+}
 
-    .service {
-        width: 100% !important;
-    }
 
-    .casas-llave-content ul {
-        padding-left: 1rem;
-    }
+
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  p, li {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  .header-container,
+  nav {
+    gap: 5px;
+    padding: 10px;
+  }
+
+  .services-container {
+    gap: 10px;
+  }
+
+  .service {
+    padding: 15px;
+    width: 95% !important;
+  }
+
+  .social-links {
+    gap: 10px;
+    margin-right: 0;
+    justify-content: center !important;
+  }
+
+  footer {
+    text-align: center;
+  }
 }
