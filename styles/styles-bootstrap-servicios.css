@@ -66,3 +66,57 @@
     text-align: center;
   }
 }
+
+
+
+@media (max-width: 480px) {
+  body, p, li, input, textarea, label {
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    padding: 4px !important;
+    margin: 4px 0 !important;
+  }
+
+  h1, h2, h3 {
+    font-size: 16px !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    margin: 6px 0 !important;
+  }
+
+  nav, .header-container, .services-container,
+  .about-section, .about-section2,
+  .contact-content, .contact-form {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 6px !important;
+  }
+
+  .service, .contact-container, .contact-links {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  .service-image, .service-video {
+    height: auto !important;
+    max-height: 180px !important;
+  }
+
+  .contact-links ul {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .social-links {
+    justify-content: center !important;
+    gap: 6px !important;
+    margin: 0 auto !important;
+  }
+
+  footer {
+    text-align: center !important;
+    padding: 10px !important;
+  }
+}
