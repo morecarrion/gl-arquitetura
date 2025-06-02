@@ -1,0 +1,113 @@
+$breakpoint-mobile: 480px;
+$padding-base: 1rem;
+$gap-base: 1.5rem;
+$color-text: #222;
+$color-bg: #bdb29c;
+$font-size-base: 16px;
+
+%centered-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+%mobile-img-text-stack {
+  flex-direction: column;
+
+  img, video {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 1rem;
+  }
+
+  .content-h2,
+  .p,
+  .p2,
+  .p-consulta,
+  .p2-consulta,
+  .p-modificable {
+    padding: 0 $padding-base;
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+
+  nav {
+    @extend %centered-column;
+    gap: 0.75rem;
+
+    a {
+      font-size: $font-size-base;
+    }
+  }
+
+  .header-container {
+    @extend %centered-column;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  .services-container,
+  .contact-content {
+    @extend %centered-column;
+    gap: $gap-base;
+  }
+
+  .service {
+    width: 90% !important;
+    padding: 1rem;
+  }
+
+  .about-section,
+  .about-section2 {
+    @extend %mobile-img-text-stack;
+  }
+
+  .contact-container,
+  .contact-links {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 $padding-base;
+  }
+
+  .contact-links {
+    ul {
+      margin: 0;
+    }
+  }
+
+  footer {
+    text-align: center;
+
+    .social-links {
+      justify-content: center !important;
+    }
+  }
+
+  h1, h2, h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .contact-header p,
+  .content-h2 p,
+  .p,
+  .p2,
+  .p-consulta,
+  .p2-consulta,
+  .p-modificable {
+    font-size: $font-size-base;
+    line-height: 1.4;
+  }
+
+  input,
+  textarea,
+  .submit-btn {
+    font-size: $font-size-base;
+  }
+}
