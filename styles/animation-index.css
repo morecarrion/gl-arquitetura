@@ -1,0 +1,65 @@
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+  
+  @keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* ANIMACIONES PARA INDEX */
+  h1 {
+    animation: fadeInDown 1s ease-out forwards;
+  }
+  
+  .service-h2, .services-container .service {
+    animation: fadeInUp 1.2s ease-out forwards;
+  }
+
+  nav a {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+
+  .service-image, .service-video {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  h1, h2, h3 {
+    animation: fadeInScale 0.8s ease forwards;
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  
+  @keyframes fadeInScale {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .social-links img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;}
